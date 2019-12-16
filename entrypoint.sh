@@ -7,7 +7,7 @@ DEFAULTS=$4
 EXTRA_PACKAGES=$5
 
 if [ ! "X$EXTRA_PACKAGES" = X ]; then
-  yum install $EXTRA_PACKAGES
+  yum install -y $EXTRA_PACKAGES
 fi
 
 git clone https://github.com/alisw/alibuild
