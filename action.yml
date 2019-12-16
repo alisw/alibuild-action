@@ -17,6 +17,10 @@ inputs:
     description: 'alibuild defaults to use'
     required: true
     default: 'o2'
+  extra_packages:
+    description: 'extra packages to install'
+    required: true
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -25,3 +29,4 @@ runs:
     - ${{ inputs.alibuild_slug }}
     - ${{ inputs.alidist_slug }}
     - ${{ inputs.defaults }}
+    - ${{ inputs.extra_packages }}
