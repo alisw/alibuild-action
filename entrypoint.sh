@@ -8,4 +8,4 @@ DEFAULTS=$4
 git clone https://github.com/alisw/alibuild
 git clone https://github.com/alisw/alidist
 
-aliBuild build --defaults o2 $PACKAGE
+alibuild/aliBuild build --defaults o2 $PACKAGE
