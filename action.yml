@@ -1,0 +1,27 @@
+name: 'aliBuild'
+description: 'Build a package with alibuild'
+inputs:
+  package:  # id of input
+    description: 'What to build'
+    required: true
+    default: 'O2'
+  alibuild_slug:
+    description: 'Slug for aliBuild'
+    required: true
+    default: 'alisw/alibuild@master'
+  alidist_slug:
+    description: 'Slug for alidist'
+    required: true
+    default: 'alisw/alibuild@master'
+  defaults:
+    description: 'alibuild defaults to use'
+    required: true
+    default: 'o2'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.package }}
+    - ${{ inputs.alibuild_slug }}
+    - ${{ inputs.alidist_slug }}
+    - ${{ inputs.defaults }}
