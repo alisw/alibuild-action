@@ -6,7 +6,9 @@ ALIDIST_SLUG=$3
 DEFAULTS=$4
 EXTRA_PACKAGES=$5
 
-yum install $EXTRA_PACKAGES
+if [ ! "X$EXTRA_PACKAGES" = X ]; then
+  yum install $EXTRA_PACKAGES
+fi
 
 git clone https://github.com/alisw/alibuild
 git clone https://github.com/alisw/alidist
