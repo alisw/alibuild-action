@@ -10,6 +10,7 @@ if [ ! "X$EXTRA_PACKAGES" = X ]; then
   yum install -y $EXTRA_PACKAGES
 fi
 
+cd ..
 git clone https://github.com/alisw/alibuild
 git clone https://github.com/alisw/alidist
 
