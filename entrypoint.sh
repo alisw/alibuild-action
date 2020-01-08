@@ -5,9 +5,13 @@ ALIBUILD_SLUG=$2
 ALIDIST_SLUG=$3
 DEFAULTS=$4
 EXTRA_PACKAGES=$5
+REMOVE_PACKAGE=$6
 
 if [ ! "X$EXTRA_PACKAGES" = X ]; then
   yum install -y $EXTRA_PACKAGES
+fi
+if [ ! "X$REMOVE_PACKAGES" = X ]; then
+  yum remove -y $REMOVE_PACKAGES
 fi
 
 cd ..
