@@ -34,4 +34,4 @@ runs:
     - ${{ inputs.alidist_slug }}
     - ${{ inputs.defaults }}
     - ${{ inputs.extra_packages }}
-    - ${{ inputs.remove_package }}
+    - ${{ inputs.remove_packages }}
