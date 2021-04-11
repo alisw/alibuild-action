@@ -18,5 +18,5 @@ cd ..
 git clone https://github.com/alisw/alibuild
 git clone https://github.com/alisw/alidist
 
-alibuild/aliBuild doctor --defaults o2 $PACKAGE --debug
-alibuild/aliBuild build --defaults o2 $PACKAGE
+python3 alibuild/aliBuild doctor --defaults o2 $PACKAGE --debug
+python3 alibuild/aliBuild build --defaults o2 $PACKAGE
