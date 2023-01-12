@@ -14,6 +14,8 @@ if [ ! "X$REMOVE_PACKAGES" = X ]; then
   yum remove -y $REMOVE_PACKAGES
 fi
 
+cd $GITHUB_WORKSPACE
+
 echo Checking out code in $PWD
 
 git clone https://github.com/alisw/alibuild
