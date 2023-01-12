@@ -15,7 +15,7 @@ if [ ! "X$REMOVE_PACKAGES" = X ]; then
 fi
 
 echo Checking out code in $PWD
-cd ..
+
 git clone https://github.com/alisw/alibuild
 git clone https://github.com/alisw/alidist
 
